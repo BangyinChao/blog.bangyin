@@ -8,37 +8,21 @@
 	--box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-@font-face {
-	font-family: "Atkinson";
-	src: url("/fonts/atkinson-regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Atkinson";
-	src: url("/fonts/atkinson-bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
-
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
 	background: #ffffff;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: #374151;
+	color: #333333;
 	font-size: 18px;
-	line-height: 1.8;
+	line-height: 1.6;
 }
 
 main {
-	width: 680px;
+	width: 720px;
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 4em 1em;
@@ -46,40 +30,40 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 2em 0 0.8em 0;
-	color: #111827;
+	color: #1a1a1a;
 	line-height: 1.3;
 	font-weight: 600;
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 48px;
 	margin-top: 0;
 }
 
 h2 {
-	font-size: 1.8em;
+	font-size: 32px;
 	margin-top: 2.5em;
 }
 
 h3 {
-	font-size: 1.4em;
+	font-size: 24px;
 }
 
 h4 {
-	font-size: 1.2em;
+	font-size: 20px;
 }
 
 h5 {
-	font-size: 1.1em;
+	font-size: 18px;
 }
 
 strong, b {
 	font-weight: 600;
-	color: #111827;
+	color: #1a1a1a;
 }
 
 a {
-	color: #111827;
+	color: #1a1a1a;
 	text-decoration: underline;
 	text-decoration-color: #d1d5db;
 	text-underline-offset: 3px;
@@ -87,12 +71,12 @@ a {
 }
 
 a:hover {
-	text-decoration-color: #111827;
+	text-decoration-color: #1a1a1a;
 }
 
 p {
 	margin-bottom: 1.5em;
-	line-height: 1.8;
+	line-height: 1.6;
 }
 
 .prose p {
@@ -156,7 +140,7 @@ pre > code {
 }
 
 blockquote {
-	border-left: 3px solid #111827;
+	border-left: 3px solid #1a1a1a;
 	padding: 0.5em 0 0.5em 1.5em;
 	margin: 2em 0;
 	font-style: italic;
@@ -178,7 +162,7 @@ ul, ol {
 
 li {
 	margin-bottom: 0.5em;
-	line-height: 1.8;
+	line-height: 1.6;
 }
 
 @media (max-width: 720px) {
@@ -189,10 +173,10 @@ li {
 		padding: 2em 1em;
 	}
 	h1 {
-		font-size: 2em;
+		font-size: 32px;
 	}
 	h2 {
-		font-size: 1.5em;
+		font-size: 24px;
 	}
 }
 

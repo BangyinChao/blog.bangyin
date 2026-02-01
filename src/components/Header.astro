@@ -1,5 +1,5 @@
 ---
-const SITE_TITLE = "邦印的博客";
+const SITE_TITLE = "Bangyin";
 import HeaderLink from "./HeaderLink.astro";
 ---
 
@@ -14,6 +14,71 @@ import HeaderLink from "./HeaderLink.astro";
     </div>
   </nav>
 </header>
+
+<style>
+  header {
+    margin: 0;
+    padding: 0 1.5rem;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  h2 a,
+  h2 a.active {
+    text-decoration: none;
+    color: #111827;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  nav a {
+    padding: 1.25rem 0.75rem;
+    color: #6b7280;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+  }
+
+  nav a:hover {
+    color: #111827;
+  }
+
+  nav a.active {
+    color: #111827;
+    border-bottom-color: #111827;
+  }
+
+  .internal-links {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  @media (max-width: 720px) {
+    header {
+      padding: 0 1rem;
+    }
+    h2 {
+      font-size: 1.1rem;
+    }
+    nav a {
+      padding: 1rem 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
+</style>
 
 <style>
   header {

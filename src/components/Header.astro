@@ -1,14 +1,6 @@
 ---
-const SITE_TITLE = "Bangyin";
+const SITE_TITLE = "邦印的博客";
 import HeaderLink from "./HeaderLink.astro";
-
-// ✅ 把下面 4 个链接替换成你自己的
-const LINKS = {
-  wechatOA: "https://mp.weixin.qq.com/xxxx", // 公众号文章/主页链接
-  xiaohongshu: "https://www.xiaohongshu.com/user/profile/xxxx", // 小红书主页
-  youtube: "https://www.youtube.com/@bangyin", // YouTube 频道
-  wecom: "/contact", // 企业微信：建议站内 contact 页面放二维码
-};
 ---
 
 <header>
@@ -17,30 +9,8 @@ const LINKS = {
 
     <div class="internal-links">
       <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/blog">Writing</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
-    </div>
-
-    <div class="social-links" aria-label="Bangyin social links">
-      <a href={LINKS.wechatOA} target="_blank" rel="noreferrer">
-        <span class="sr-only">Bangyin 的公众号</span>
-        <span class="chip">公众号</span>
-      </a>
-
-      <a href={LINKS.xiaohongshu} target="_blank" rel="noreferrer">
-        <span class="sr-only">Bangyin 的小红书</span>
-        <span class="chip">小红书</span>
-      </a>
-
-      <a href={LINKS.youtube} target="_blank" rel="noreferrer">
-        <span class="sr-only">Bangyin 的 YouTube</span>
-        <span class="chip">YouTube</span>
-      </a>
-
-      <a href={LINKS.wecom}>
-        <span class="sr-only">联系 Bangyin（企业微信）</span>
-        <span class="chip">企业微信</span>
-      </a>
     </div>
   </nav>
 </header>
